@@ -1,9 +1,11 @@
-module svg 
+module svg
 
 fn test_svg() {
-	mut s := new_svg(500, 500)
-	s.circle(250, 250, 100, "fill:red; stroke:yellow")
-	s.text(50,100,'Hello, SVG.', 'text-length:300')
-	s.write_file("circle.svg")
-	assert true
+	mut s := new_svg(800, 600)
+
+	f := [3.0, 1, 5, 9, 13, 31, 16, 38, 51, 27, 100, 29, 60]
+	s.trend(f, 'Coxxx Trends from OHW.', 'Date', 'Amount', 'red')
+	s.write_file('trend.svg')
+
+	assert s.heigth == 600
 }
