@@ -1,5 +1,7 @@
 # Example:
 
+![result](trend.svg)
+
 module main
 
 import svg
