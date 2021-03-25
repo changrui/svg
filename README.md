@@ -1,6 +1,6 @@
 # Example:
 
-![result](trend.svg)
+![result](trend.png)
 
 module main
 
