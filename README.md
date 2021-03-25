@@ -6,7 +6,7 @@ module main
 
 import svg
 
-fn test_svg() {
+fn main() {
 
 	mut s := svg.new_svg(800, 600)
 
